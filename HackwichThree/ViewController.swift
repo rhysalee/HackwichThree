@@ -19,18 +19,22 @@ var SecondString = "the background color will turn to green"
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+    
+    
     @IBAction func changeColorButtonPressed(_ sender: Any)
     {
         
         if FirstString == "the background color will turn to red"
         {
             self.view.backgroundColor = UIColor.red
+            }
+        self.firstLabel.text = "red"
+    
         }
-        else
+    else 
         {
             self.view.backgroundColor = UIColor.blue
         }
-    }
-    
 }
-
