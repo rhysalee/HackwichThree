@@ -14,14 +14,15 @@ var FirstString = "the background color will turn to blue"
     
 var SecondString = "the background color will turn to green"
     
+    @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBOutlet weak var firstLabel: UILabel!
-    @IBOutlet weak var secondLabel: UILabel!
-    
+
     
     @IBAction func changeColorButtonPressed(_ sender: Any)
     {
@@ -29,12 +30,23 @@ var SecondString = "the background color will turn to green"
         if FirstString == "the background color will turn to red"
         {
             self.view.backgroundColor = UIColor.red
+              self.firstLabel.text = "red"
             }
-        self.firstLabel.text = "red"
     
         }
-    else 
+        else
         {
-            self.view.backgroundColor = UIColor.blue
+        self.secondLabel.text = "blue"
+    
+        self.view.backgroundColor = UIColor.blue
         }
+}
+
+var numberOne = 5
+
+var numberTwo = 10
+
+    if numberOne < numberTwo
+{
+    self.view.backgroundColor = UIColor.green
 }
