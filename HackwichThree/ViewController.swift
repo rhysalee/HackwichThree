@@ -8,14 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController
-{
+class ViewController: UIViewController {
 var FirstString = "the background color will turn to blue"
     
 var SecondString = "the background color will turn to green"
     
+    var greetingOne = "hello"
+    var greetingTwo = "goodbye"
+    
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
+    
+    @IBOutlet weak var thirdLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +35,8 @@ var SecondString = "the background color will turn to green"
         {
             self.view.backgroundColor = UIColor.red
               self.firstLabel.text = "red"
-            }
-    
         }
+    
         else
         {
         self.secondLabel.text = "blue"
@@ -41,12 +44,18 @@ var SecondString = "the background color will turn to green"
         self.view.backgroundColor = UIColor.blue
         }
 }
+// Problem Set 2
 
-var numberOne = 5
-
-var numberTwo = 10
-
-    if numberOne < numberTwo
-{
-    self.view.backgroundColor = UIColor.green
-}
+    
+    @IBAction func magicButtonPressed(_ sender: Any) {
+        if greetingOne == "hello"
+            {
+            self.view.backgroundColor = UIColor.green
+            
+            self.thirdLabel.text = "green"
+            
+            print("i completed both problem sets")
+            }
+        }
+    }
+    

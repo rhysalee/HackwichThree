@@ -44,6 +44,9 @@
                                 <rect key="frame" x="96" y="545" width="204" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Magic Button"/>
+                                <connections>
+                                    <action selector="magicButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obw-f1-3XL"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l1-26-jr0">
                                 <rect key="frame" x="96" y="516" width="204" height="41"/>
@@ -58,8 +61,8 @@
                     </view>
                     <connections>
                         <outlet property="firstLabel" destination="LR5-PR-6zp" id="EH1-Yd-LYV"/>
-                        <outlet property="labelRed" destination="LR5-PR-6zp" id="LTZ-MB-vPZ"/>
                         <outlet property="secondLabel" destination="wbT-ap-WEy" id="KUQ-gX-mQP"/>
+                        <outlet property="thirdLabel" destination="9l1-26-jr0" id="nOS-bd-OBt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
